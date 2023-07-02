@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function Employee(name, lastname, age, position ){
+            this.name = name;
+            this.lastname = lastname;
+            this.age = age;
+            this.position = position;
+            this.showyourself = function(){
+                // Aqui usamos backstich para que sea mas facil la integracion de strings con variables
+                console.log(`My name is ${this.name} ${this.lastname}, I am ${this.age} years old, whit position of ${this.position} `);
+            }
+        };
+
+        let employee1 = new Employee("Maria", "Estrella", "50", "Software Developer");
+
+
+    </script>
+    
+</body>
+</html>
