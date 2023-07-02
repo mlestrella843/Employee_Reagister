@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+</head>
+<body>
+    <!-- Crear objetos vacios con la propiedad Object de Javascript -->
+
+    <script> 
+        
+        let carro = new Object();
+
+        carro.marca = 'Ford';
+        carro['modelo'] = 'Prisma';
+        carro.encender = function(){
+            alert("Enciende el carro");
+        };
+
+        // Ademas se puede crear un objecto vacio pero asignando inmediatamente una propiedad al objeto
+        let perro = new Object( {name:'Lia'} );
+
+        // Ademas se puede crear un objeto vacio usando el metodo create.
+        //Aqui heredara todas las propiedades del carro anteriormente creado
+
+        let carro1 = Object.create(carro);
+
+    </script>       
+    
+</body>
+</html>
