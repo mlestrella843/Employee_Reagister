@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructors or Instances in JavaScript</title>
+</head>
+<body>
+
+    <!-- // Para crear constructores bases y luego crear instancias distintas entre ellas,  
+    Necesitamos crear constructores que reciban esos parametros particulares que queremos, por
+eso lo constructores los popdras hacer sin parametros, si no los necesitas, y con parametros si necesitas
+crear nuevos objetos con particularidades. El nombre de los constructores siempre va en mayuscula-->
+    
+<script> 
+
+        function Dog( race_param, age_param ){
+            this.feet = 4;
+            this.race = race_param;
+            this.age = age_param;
+            this.ladrar = function(){
+                console.log("Guau");
+            };
+
+        };
+
+        let Lia = new Dog("Yorkie", "12");
+        let Neron = new Dog("Pitbull", "4");
+
+
+</script>
+
+
+    
+</body>
+</html>

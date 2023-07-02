@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Object dog
+        let dog = {
+            name: "Lia",
+            race: "Shi Ztu",
+            edad: 4,
+            ladrar(){
+                console.log("Guau");
+            },
+            saludar(){
+                console.log("Hello I'm : " + this.name);
+            }         
+        };
+
+         // Object dog2
+         let dog2 = {
+            name: "Neron",
+            race: "Pitbull",
+            edad: 6,
+            ladrar(){
+                console.log("Guau");
+            },
+            saludar(){
+                console.log("Hello I'm : " + this.name);
+            }         
+        };
+
+        function getBirthday(){
+            dog.edad = dog.edad + 1;
+        }
+
+        //for create new properties we can do in this way
+        dog["eyeColors"] = 'Brown';
+
+    </script>
+    
+</body>
+</html>
