@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop For In</title>
+</head>
+<body>
+
+    <script> 
+        function Dog( race_param, age_param ){
+            this.feet = 4;
+            this.race = race_param;
+            this.age = age_param;
+            this.ladrar = function(){
+                console.log("Guau");
+            };
+
+        };
+
+        let Lia = new Dog("Yorkie", 12);
+        let Neron = new Dog("Pitbull", 4);
+
+        //Usando el For In puedo revisar cada caracteristica de una instancia en particular y hacer lo que necesite
+        for(let caracteristica in Lia){
+            console.log(caracteristica + ": " + Lia[caracteristica]);
+        }
+
+        for(let caracteristica in Neron){
+            console.log(caracteristica + ": " + Neron[caracteristica]);
+        }
+
+    </script>
+
+
+</body>
+</html>
